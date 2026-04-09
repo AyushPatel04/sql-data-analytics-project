@@ -66,26 +66,29 @@ These insights empower stakeholders with key business metrics, enabling strategi
 ```
 sql-data-analytics-project/
 │
-├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
+├── datasets/                              # Raw datasets used for the project (ERP and CRM data)
 │
-├── docs/                               # Project documentation and architecture details
-│   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of ETL
-│   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
-│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
-│   ├── data_models.drawio              # Draw.io file for data models (star schema)
-│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
+├── docs/                                  # Project documentation and architecture details
+│   ├── project_roadmap.png                # Project roadmap highlighting the types of data analysis
 │
-├── scripts/                            # SQL scripts for ETL and transformations
-│   ├── bronze/                         # Scripts for extracting and loading raw data
-│   ├── silver/                         # Scripts for cleaning and transforming data
-│   ├── gold/                           # Scripts for creating analytical models
-│
-├── tests/                              # Test scripts and quality files
-│
-├── README.md                           # Project overview and instructions
-├── LICENSE                             # License information for the repository
-├── .gitignore                          # Files and directories to be ignored by Git
+├── scripts/                               # SQL scripts for data analytics
+│   ├── 00_init_database.sql               # Script for creating a new database named 'DataWarehouseAnalytics'
+│   ├── 01_database_exploration.sql        # Script for exploring the structure of the database
+│   ├── 02_dimensions_exploration.sql      # Script for exploring the structure of dimension tables
+│   ├── 03_date_range_exploration.sql      # Script for analyzing key data points and understanding the range of historical data
+│   ├── 04_measures_exploration.sql        # Script for identifying overall trends or spot anomalies
+│   ├── 05_magnitude_analysis.sql          # Script for understanding data distribution across categories
+│   ├── 06_ranking_analysis.sql            # Script for identifying top performers or laggards
+│   ├── 07_change_over_time_analysis.sql   # Script for time-series analysis and identifying seasonality
+│   ├── 08_cumulative_analysis.sql         # Script for growth analysis and identifying long-term trends
+│   ├── 09_performance_analysis.sql        # Script for tracking yearly trends and growth
+│   ├── 10_part_to_whole_analysis.sql      # Script for comparing performance or metrics across dimensions or time periods
+│   ├── 11_data_segmentation.sql           # Script for grouping data into meaningful categories for targeted insights
+│   ├── 12_report_customers.sql            # Script for consolidating key customer metrics and behaviors
+│   ├── 13_report_products.sql             # Script for consolidating key product metrics and behaviors
+│   
+├── README.md                              # Project overview and instructions
+├── LICENSE                                # License information for the repository
 ```
 ---
 
